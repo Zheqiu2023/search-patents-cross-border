@@ -97,7 +97,9 @@ def main():
         for item in candidates:
             handle.write(json.dumps(item, ensure_ascii=False) + "\n")
     args.audit.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(audit, ensure_ascii=False))
+    # Keep terminal output ASCII-safe on Windows runners with legacy console encodings.
+    # The saved audit and JSONL above still contain readable UTF-8 text.
+    print(json.dumps(audit, ensure_ascii=True))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.playwright-mcp/
+.validation-deps/
+outputs/
+epub-*.json
+research*.json
+results*.csv
+results*.xlsx
+*.log

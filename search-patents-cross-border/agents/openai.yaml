@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "跨库专利检索与复筛"
+  short_description: "中国公布公告、Google Patents 与 WIPO 跨库检索及专利族复筛"
+  default_prompt: "使用 $search-patents-cross-border 检索国内外公开专利并按专利族复筛，给出中文概述、发明人及可核查来源。"

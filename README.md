@@ -8,7 +8,7 @@ An [Agent Skills](https://agentskills.io/specification) folder for searching pub
 
 1. Download or clone this repository.
 2. Copy the **whole** `search-patents-cross-border/` folder into the skills directory documented by your agent. Keep `SKILL.md`, `references/` and `scripts/` together. Restart/reload the agent if it does not discover newly installed skills automatically.
-3. Ask the agent in Chinese: `使用 search-patents-cross-border 技能检索托盘四向车的机械结构专利，列明申请人、独立权利要求证据与来源。`
+3. Ask the agent in Chinese: `使用 search-patents-cross-border 技能检索某项技术的相关专利，列明申请人、独立权利要求证据与来源。`
 
 Different agents choose different discovery directories and tools. If an agent does not support Agent Skills discovery, give it the local path to `search-patents-cross-border/SKILL.md` and ask it to read and follow that file and its relative references. This **manual mode** requires file-reading and web/browser access; the format cannot make every agent automatically install or execute a skill.
 

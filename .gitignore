@@ -6,7 +6,6 @@ __pycache__/
 .playwright-mcp/
 .validation-deps/
 outputs/
-epub-*.json
 research*.json
 results*.csv
 results*.xlsx

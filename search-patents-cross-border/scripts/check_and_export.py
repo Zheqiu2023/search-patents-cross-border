@@ -20,8 +20,8 @@ def check(data):
         errors.append("缺少检索日志 searches")
     else:
         recorded = {str(entry.get("database", "")).lower() for entry in searches if isinstance(entry, dict)}
-        if not any("公布公告" in name or "epub" in name for name in recorded):
-            warnings.append("未记录中国专利公布公告站尝试或未覆盖原因")
+        if not any("国家知识产权局" in name or "cnipa" in name or "pss" in name for name in recorded):
+            warnings.append("未记录国家知识产权局专利检索及分析系统尝试或未覆盖原因")
         batch_ids = set()
         for i, entry in enumerate(searches, 1):
             if not isinstance(entry, dict) or any(not entry.get(k) for k in ("database", "query", "searched_at", "status")):

@@ -41,7 +41,7 @@
 
 stage使用 browser_setup、navigation、interaction、search_form、search、result_page、extraction、pagination、detail、claims 或 zero_results。脱敏URL去除账号信息、查询参数及fragment；检索词另存 query，不存会话ID。仅记录公开页面标题，认证页面标题用固定“认证页面”替代。
 
-不要整包保存网络响应、Cookie、请求头、localStorage、认证页HTML或异常全文。网络工具仅按需要查看状态与错误，敏感值不输出。原始快照若包含账号或验证码不进入公开报告。公布公告站辅助脚本仅输出安全错误类型与阶段；其候选列表及原生报告不包含账号信息。
+不要整包保存网络响应、Cookie、请求头、localStorage、认证页HTML或异常全文。网络工具仅按需要查看状态与错误，敏感值不输出。原始快照若包含账号或验证码不进入公开报告。国家知识产权局检索系统的登录状态只用于当次会话；候选记录和报告不包含账号信息。若点击“检索”后出现空白或 HTTP 400，先区分是误点顶部导航、结果页尚未就绪，还是站点拒绝访问，再按 cnipa-pss.md 重试。
 
 ## 验收
 
